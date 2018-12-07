@@ -28,13 +28,13 @@ public class DiceHolder{
 			holder.set(x,holder.get(i));
 		}
 		}
-
-
-
-
-
-
-
+		 public String toString(){
+		 String output= "";
+			 for(int u = 0; u< holder.size(); u++){
+			 output+= u+"- "+holder.get(u)+"\n ";
+			 }
+			 return output;
+		}
 
 
 }
