@@ -22,10 +22,9 @@ public class DiceHolder{
 			 int x;
 
 		public void shake(){
-			x= (int)(Math.random()*6)+1;
 
-			for(int i = 0; i<holder.size(); i++){
-			holder.set(x,holder.get(i));
+			for(int i = holder.size()-1; i>0; i--){
+			holder.get(i).roll();
 		}
 		}
 		 public String toString(){
